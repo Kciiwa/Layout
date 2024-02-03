@@ -39,6 +39,16 @@
     .page-title__highlight {
         margin-left: -24px;
     }
+
+    .gradient::after {
+        content: '';
+        width: 25%;
+        height: 20px;
+        position: absolute;
+        /* left: 0; */
+        right: 0;
+        background: linear-gradient(to right, #f8f8f800, #F8F8F8 );
+    }
 }
 
 @media (max-width: 600px) {
@@ -84,8 +94,17 @@
     .info__image-cps {
         border-radius: 0;
     }
+    
     .info__image {
         width: 100%;
         height: auto;
+    }
+
+    .info__extra320px {
+        display: none;
+    }
+
+    .page-main {
+        padding-top: 24px;
     }
 }
